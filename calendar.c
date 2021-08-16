@@ -36,19 +36,22 @@ int main()
     printf("Fr   ");
     printf("Sa\n");
     int i=1;
+    int j=1;
     for(i=1;i<sdays;i++)
     {
-        printf("    ");
+        printf("     ");
     }
-    for (i=1; i <= ndays; i++)
+    for (i=sdays; i <= sdays+ndays-1; i++)
     {
-        if(i < 10)
+        if(j < 10)
         {
-            printf("0%d   ", i);
+            printf("0%d   ", i-sdays+1);
+            j++;
         }
         else
         {
-            printf("%d   ", i);
+            printf("%d   ", i-sdays+1);
+            j++;
         }
         if (i % 7 == 0)
         {
@@ -58,8 +61,6 @@ int main()
         {
             continue;
         }
-     //   br++;
-        
     }
     printf("\nThank you\n");
     getchar();
