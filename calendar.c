@@ -34,7 +34,7 @@ int main()
     printf("We | ");
     printf("Th | ");
     printf("Fr | ");
-    printf("Sa |\n");
+    printf("Sa | \n");
     printf("--------------------------------\n");
     int i=1;
     int j=1;
