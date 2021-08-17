@@ -28,41 +28,45 @@ int main()
     {
        printf("Final Result\n");
     }
-    printf("Su   ");
-    printf("Mo   ");
-    printf("Tu   ");
-    printf("We   ");
-    printf("Th   ");
-    printf("Fr   ");
-    printf("Sa\n");
+    printf("Su | ");
+    printf("Mo | ");
+    printf("Tu | ");
+    printf("We | ");
+    printf("Th | ");
+    printf("Fr | ");
+    printf("Sa |\n");
+    printf("--------------------------------\n");
     int i=1;
     int j=1;
     for(i=1;i<sdays;i++)
     {
-        printf("     ");
+        printf("   | ");
     }
     for (i=sdays; i <= sdays+ndays-1; i++)
     {
         if(j < 10)
         {
-            printf("0%d   ", i-sdays+1);
+            printf("0%d | ", i-sdays+1);
             j++;
         }
         else
         {
-            printf("%d   ", i-sdays+1);
+            printf("%d | ", i-sdays+1);
             j++;
         }
         if (i % 7 == 0)
         {
             printf("\n");
+            printf("--------------------------------\n");
         }
         else
         {
             continue;
         }
     }
+    printf("\n--------------------------------\n");
     printf("\nThank you\n");
+    printf("--------------------------------\n");
     getchar();
     getchar();
     return 0;
